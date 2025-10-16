@@ -317,7 +317,7 @@ class FibonacciGUI:
         # Firma principal - COLOR DISCRETO
         signature_label = tk.Label(signature_frame,
                                   text="POWERED BY TREYER",
-                                  font=("Arial", 11, "normal"),
+                                  font=("Arial", 15, "normal"),
                                   fg="#888888",  # Texto gris discreto
                                   bg="#2d2d2d")  # Fondo gris oscuro discreto
         signature_label.pack(expand=True, fill='both')
