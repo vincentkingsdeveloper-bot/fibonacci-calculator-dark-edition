@@ -17,7 +17,7 @@ def calculate_fibonacci(n):
 class FibonacciGUI:
     def __init__(self, root):
         self.root = root
-        self.root.title("🔢 Calculadora de Fibonacci - Dark Edition")
+        self.root.title("🔢 Calculadora de Fibonacho - Dark Edition")
         self.root.geometry("700x600")
         self.root.resizable(True, True)
         
@@ -146,14 +146,14 @@ class FibonacciGUI:
         
         # Título con efecto de sombra
         shadow_title = tk.Label(title_frame, 
-                               text="🔢 CALCULADORA DE FIBONACCI", 
+                               text="🔢 CALCULADORA DE FIBONACHO", 
                                font=("Segoe UI", 20, "bold"),  # Aumentado de 18 a 20
                                fg=self.colors['shadow'], 
                                bg=self.colors['bg_primary'])
         shadow_title.pack(anchor='center')
         
         title_label = tk.Label(title_frame, 
-                              text="🔢 CALCULADORA DE FIBONACCI", 
+                              text="🔢 CALCULADORA DE FIBONACHO", 
                               font=("Segoe UI", 20, "bold"),  # Aumentado de 18 a 20
                               fg=self.colors['accent'],
                               bg=self.colors['bg_primary'])
@@ -283,7 +283,7 @@ class FibonacciGUI:
                                            mode='indeterminate')
         
         # Mensaje inicial en el historial
-        welcome_msg = """🌟 ¡Bienvenido a la Calculadora de Fibonacci Dark Edition! 🌟
+        welcome_msg = """🌟 ¡Bienvenido a la Calculadora de Fibonacho Dark Edition! 🌟
 
 💡 Consejos de uso:
 • Números pequeños (1-50): ⚡ Cálculo instantáneo
@@ -317,7 +317,7 @@ class FibonacciGUI:
         # Firma principal - COLOR DISCRETO
         signature_label = tk.Label(signature_frame,
                                   text="POWERED BY TREYER",
-                                  font=("Arial", 15, "normal"),
+                                  font=("Segoe UI", 14, "bold"),  # Aumentado al 14 y cambio de letra
                                   fg="#888888",  # Texto gris discreto
                                   bg="#2d2d2d")  # Fondo gris oscuro discreto
         signature_label.pack(expand=True, fill='both')
@@ -438,7 +438,7 @@ class FibonacciGUI:
         self.history_text.delete(1.0, tk.END)
         
         # Restaurar mensaje de bienvenida
-        welcome_msg = """🌟 ¡Bienvenido a la Calculadora de Fibonacci Dark Edition! 🌟
+        welcome_msg = """🌟 ¡Bienvenido a la Calculadora de Fibonacho Dark Edition! 🌟
 
 💡 Consejos de uso:
 • Números pequeños (1-50): ⚡ Cálculo instantáneo
